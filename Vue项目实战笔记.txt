@@ -1,0 +1,20 @@
+物理像素：屏幕的分辨率 iphone6的750*1334
+设备独立像素：设备大小 ipnone6的375px
+移动端样式的dpr：物理像素/设备独立像素 iphone6的dpr为2
+
+px:css像素单位
+em:相对于父元素字体大小
+rem: 相对于根元素大小（html元素）
+
+获取视口宽高：document.documentElement.clientwidth
+document.documentElement.height
+
+防抖：防止某个事件的高频触发，引起重绘重排
+
+stylus使用过程中有新问题：新版本需要进行配置，因此换成了旧版的stylus-loader
+
+webpack 开发环境和生产环境
+不管在什么环境下，都会进行项目打包
+开发环境：不会生成本地打包文件，会自动启动服务器
+生产环境：会生成本地打包文件，需要另外启动服务器开启项目
+
