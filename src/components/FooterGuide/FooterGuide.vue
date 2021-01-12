@@ -33,7 +33,19 @@
 
     methods: {
       goto (path) {
-        this.$router.replace(path)
+        /* if (path === this.$route.path) return
+        this.$router.replace(path) */
+        /* if (path !== this.$route.path) {
+          this.$router.replace(path)
+        } */
+
+
+        if (path !== this.$route.path) {
+          this.$router.replace(path)
+        } else {
+          //重新刷新
+          window.location = path
+        }
       }
     }
   }
@@ -49,7 +61,8 @@
     left 0px
     bottom 0px
     width 100%
-    height 80px
+    height 50px
+    background #fff
     .guide-item
       display flex
       flex-direction column
@@ -58,8 +71,8 @@
       &.on
         color $green
       span
-        margin-top 8px
-        font-size 14px
+        margin-top 3px
+        font-size 12px
         .iconfont
-          font-size 44px
+          font-size 22px
 </style>

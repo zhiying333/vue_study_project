@@ -18,3 +18,45 @@ webpack 开发环境和生产环境
 开发环境：不会生成本地打包文件，会自动启动服务器
 生产环境：会生成本地打包文件，需要另外启动服务器开启项目
 
+合并分支
+	切换到主分支：master
+	合并分支：git merge dev(分支名称)
+	推送到远程：git push origin master
+切换创建分支： git checkout -b dev(分支名称)
+切换分支：git checkout dev
+拉取： git pull origin master
+克隆仓库： git clone 仓库地址
+
+this.$nextTick( () => {})
+
+阻止默认行为：xxx.prevent
+
+按钮禁止点击：disabled为true时，禁止点击
+
+表单验证库：veeValidate
+
+刷新页面，vuex数据丢失：vuex数据存储在内存中，刷新会重新分配内存
+
+cookie: 1.大小有限：4kb  2.容易被截获 3.浏览器允许用户禁用cookie
+ 4.服务器生成浏览器存储cookie  5.每次请求都会携带，占用带宽
+
+
+
+问题：
+1.视频教程属于2019年底，第三方库swiper已更新到6，教程使用的是5版本，导致
+分页器并未显示，没有自动轮播（目前尚未解决）
+
+2.项目发送请求过程中，涉及跨域，配置代理后报错，
+Could not proxy request /api/position/116.36867,40.10038 from localhost:8080
+调试过程中发现前端代码无问题
+最后修改服务器运行端口4000为5000后，成功运行
+跨域解决，代理无问题
+
+面试准备点：
+	js原生：作用域，作用域链，闭包，原型和原型链，继承，DOM
+	ajax相关
+	Promise和异步函数async  await
+	axios和二次封装axios
+	webpack，webpack写简易vue脚手架
+
+
