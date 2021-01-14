@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import 'lib-flexible/flexible'
 import { Button } from 'mint-ui';
+import './mock/mockServer' //mock模拟数据
 
 import App from './App.vue'
 import router from './router'

@@ -55,3 +55,6 @@ export const reqAutoLogin = () => ajax('/auto_login',{
     needToken: true
   }
 })
+
+//获取商家详细信息
+export const reqShopInfo = () => ajax('/getShopGoods')
